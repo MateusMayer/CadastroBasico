@@ -1,0 +1,145 @@
+/*Abaixo temos as especificações do corpo/body da página HTML*/
+body{
+    font-family: "Source Sans Pro", sans-serif;/*Fonte que desejamos utilizar em toda a página*/
+    background-color: #F6F8FA; /*Cor de fundo da página*/
+    position: relative; /*ajudar a garantir que os elementos dentro dele sejam posicionados 
+    corretamente e permitir um melhor controle de layout da página.*/
+}
+/* Estilos para dispositivos com largura de tela maior que 600px */
+@media only screen and (min-width: 600px) {
+  body {
+    width: 100%;
+    max-width: 1280px; /* largura máxima da página */
+    margin: 0 auto; /* centraliza o conteúdo */
+  }
+}
+
+/* Estilos para dispositivos com largura de tela menor ou igual a 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    padding: 0 10px; /* adiciona uma margem lateral */
+  }
+}
+.borda{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    
+    width: 784px;
+    height: 336px;
+    
+    /* Branco */
+    
+    background: #FFFFFF;
+    /* Contornos */
+    
+    border: 1px solid #E0E2E4;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: bold;
+}
+  section#formulario label  {
+    width: 36px;
+    height: 16px;
+    
+    /* Texto curto/14. Pequeno/14. Regular */
+    
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+  
+    /* Textos/Claros */
+    
+    color: #707274;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  section#formulario input[type="text"], 
+  section#formulario input[type="email"]{
+    /* Campo */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 8px;
+
+width: 352px;
+height: 40px;
+
+/* Branco */
+
+background: #FFFFFF;
+/* Contornos */
+
+border: 1px solid #E0E2E4;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+  }
+#botao-salvar {
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 12px;
+
+width: 70px;
+height: 40px;
+
+/* Contornos */
+
+border: 1px solid #E0E2E4;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+font-weight: bold;
+}
+
+#botao-salvar:hover {
+    background-color:rgb(181, 174, 247);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  h2{
+    font-size: 16px;
+  }
